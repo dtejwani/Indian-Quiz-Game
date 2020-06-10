@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:text="INDIAN HISTORY QUIZ"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="In which Year Did India gain Independence?"
+        android:id="@+id/oneTextView"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:hint="Enter 4 digits"
+        android:id="@+id/ansone"/>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Who was the first Mugal emperor to enter India?"
+        android:id="@+id/twoTextView"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:hint="Enter  only the main name"
+        android:id="@+id/anstwo"/>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Jawaharlal Nehru was the first PM of India?"
+        android:id="@+id/threeTextView"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+         <RadioGroup
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="True"
+                 android:layout_marginLeft="8dp"
+                 android:id="@+id/threetrue"
+                 android:onClick="onRadioButtonClicked"/>
+             <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="False"
+                 android:layout_marginLeft="8dp"
+                 android:id="@+id/threefalse"
+                 android:onClick="onRadioButtonClicked"/>
+
+
+         </RadioGroup>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Which of following are freedom fighters?"
+        android:id="@+id/fourTextView"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bhagat Singh"
+        android:id="@+id/checkone"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:id="@+id/checktwo"
+        android:text="Rani Laxmi Bai"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:id="@+id/checkthree"
+        android:text="Hirday"/>
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Who is the father of our nation?"
+        android:id="@+id/fiveTextView"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:hint="Just the last name"
+        android:id="@+id/ansfive"/>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/submit_Button"
+        android:onClick="Submit_Answers"
+        android:text="Submit" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>
